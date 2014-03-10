@@ -1019,7 +1019,7 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
  unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlock *pblock)
  {
          int DiffMode = 1;
-		 if (pindexLast->nHeight+1 >= 1120000) { DiffMode = 2; }
+		 if (pindexLast->nHeight+1 >= 1121080) { DiffMode = 2; }
          
          if             (DiffMode == 1) { return GetNextWorkRequired_V1(pindexLast, pblock); }
          else if        (DiffMode == 2) { return GetNextWorkRequired_V2(pindexLast, pblock); }
